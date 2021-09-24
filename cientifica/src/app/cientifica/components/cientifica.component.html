@@ -1,0 +1,42 @@
+<div class="container mt-5">
+
+  <div class="calculator card">
+    <input type="text" class="text-right calculator-screen z-depth-" id="display" name="display" readonly
+      [value]="display">
+
+    <div class="calculator-keys">
+     
+        <button type="button" class="operator btn btn-info" (click)="definirOperacao('+')">+ </button>
+        <button type="button" class="operator btn btn-info" (click)="definirOperacao('-')">- </button>
+        <button type="button" class="operator btn btn-info" (click)="definirOperacao('/')">&divide;</button>
+        <button type="button" class="operator btn btn-info" (click)="definirOperacao('*')">&times;
+        </button>
+
+        <button type="button" class="operator btn btn-info" (click)="adicionaRaiz()"> √</button>
+        <button type="button" class="operator btn btn-info" (click)="adicionaQuadrado()"> x² </button>
+        <button type="button" class="operator btn btn-info" (click)="adicionaCubo()"> x³ </button>
+        <button type="button" class="operator btn btn-info" (click)="adicionaPi()"> π </button>
+
+        <button type="button" class="btn btn-warning" (click)="adicionaNumero('7')">7 </button>
+        <button type="button" class="btn btn-warning" (click)="adicionaNumero('8')">8 </button>
+        <button type="button" class="btn btn-warning" (click)="adicionaNumero('9')">9 </button>
+
+
+        <button type="button" class="btn btn-warning" (click)="adicionaNumero('4')">4 </button>
+        <button type="button" class="btn btn-warning" (click)="adicionaNumero('5')">5 </button>
+        <button type="button" class="btn btn-warning" (click)="adicionaNumero('6')">6 </button>
+
+        <button type="button" class="btn btn-warning" (click)="adicionaNumero('1')">1 </button>
+        <button type="button" class="btn btn-warning" (click)="adicionaNumero('2')">2 </button>
+        <button type="button" class="btn btn-warning" (click)="adicionaNumero('3')">3 </button>
+
+
+        <button type="button" class="btn btn-warning" (click)="adicionaNumero('0')">0 </button>
+        <button type="button" class="decimal function btn btn-secondary" (click)="adicionaNumero('.')">.</button>
+        <button type="button" class="btn btn-danger " (click)="limpar()">C </button>
+
+        <button type="button" class="btn btn-success equal-sign " (click)="calcular()">= </button>
+      
+    </div>
+    
+  </div>
