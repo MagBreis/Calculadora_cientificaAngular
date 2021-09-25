@@ -1,6 +1,6 @@
-<div class="container mt-5">
+<div class="container-fluid mt-5">
 
-  <div class="calculator card">
+  <div class="calculator c">
     <input type="text" class="text-right calculator-screen z-depth-" id="display" name="display" readonly
       [value]="display">
 
@@ -35,7 +35,7 @@
         <button type="button" class="decimal function btn btn-secondary" (click)="adicionaNumero('.')">.</button>
         <button type="button" class="btn btn-danger " (click)="limpar()">C </button>
 
-        <button type="button" class="btn btn-success equal-sign " (click)="calcular()">= </button>
+        <button type="button" class="btn btn-info equal-sign " (click)="calcular()">= </button>
       
     </div>
     
